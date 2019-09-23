@@ -1,0 +1,50 @@
+set student 
+set teacher
+get student
+get teacher
+set question
+get question
+
+
+question obj:
+
+PartitionKey: number AI
+Rowkey: random generated number
+varchar Title
+varchar Description
+varchar Cat 1 - type vraag
+varchar Cat 2 - docent
+varchar Cat 3 - prio - normal - if SP > 100 = spoed
+varchar Quest1
+varchar	Quest2
+varchar Answer
+DateTime DateTimeInsterted
+DateTime DateTimeEnded
+Bool IsActive
+
+
+teacher obj:
+PartitionKey: number AI
+RowKey: Afkorting docent
+varchar FirstName
+varchar LastName
+Bool 	IsTeacher
+
+student obj:
+
+PartitionKey: number AI
+RowKey: student number
+varchar FirstName
+varchar LastName
+int 	QuestionCount
+int	AnsweredQuestions - per AQ 10 punten
+int 	StudentPoints
+
+
+
+
+
+
+
+
+
