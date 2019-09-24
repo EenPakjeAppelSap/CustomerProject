@@ -12,7 +12,7 @@ PartitionKey: number AI
 Rowkey: random generated number
 varchar Title
 varchar Description
-varchar Cat 1 - type vraag
+varchar Cat 1 - Vak
 varchar Cat 2 - docent
 varchar Cat 3 - prio - normal - if SP > 100 = spoed
 varchar Quest1
