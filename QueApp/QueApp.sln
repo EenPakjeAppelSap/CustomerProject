@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueApp", "QueApp.csproj", "{9E865FAC-6E3A-45F6-8BF0-6FC08EDDB34F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E865FAC-6E3A-45F6-8BF0-6FC08EDDB34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E865FAC-6E3A-45F6-8BF0-6FC08EDDB34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E865FAC-6E3A-45F6-8BF0-6FC08EDDB34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E865FAC-6E3A-45F6-8BF0-6FC08EDDB34F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4394CA0-FBE2-41FA-920A-8E5543598ED4}
+	EndGlobalSection
+EndGlobal
