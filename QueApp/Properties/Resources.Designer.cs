@@ -73,6 +73,16 @@ namespace QueApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoApp {
+            get {
+                object obj = ResourceManager.GetObject("LogoApp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap puddle {
             get {
                 object obj = ResourceManager.GetObject("puddle", resourceCulture);
