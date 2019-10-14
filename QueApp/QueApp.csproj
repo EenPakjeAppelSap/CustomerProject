@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Gebruiker\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +48,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>33428686AFEBAD6725A1BFEAEA981EEA3426E9F2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>QueApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +86,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAskQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAskQuestion.Designer.cs">
+      <DependentUpon>FormAskQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLoading.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLoading.Designer.cs">
       <DependentUpon>FormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading2.Designer.cs">
+      <DependentUpon>FormLoading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -60,8 +118,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAskQuestion.resx">
+      <DependentUpon>FormAskQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLoading.resx">
       <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading2.resx">
+      <DependentUpon>FormLoading2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -76,6 +143,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,6 +158,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QueApp_TemporaryKey.pfx" />
     <None Include="Resources\cloud.png" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +169,120 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoApp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breezeicons-actions-22-tool-rounded-rectangle-gasket-11563030404x2n9drsh5h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-png-login-button-png-image-18028-872.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73-730482_existing-user-default-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.30839042152311824927371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissclipart-password-icon-png-clipart-computer-icons-password-dbc9ca3bd08f47ec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\202-2021854_password-icon-png-new-password-icon-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\499-4993022_login-account-password-comments-login-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\202-2021854_password-icon-png-new-password-icon-transparent-png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\698630-icon-114-lock-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoApp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load2new.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestLine-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-53629_text-box-outline-line-rectangle-box-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnfitImportantBats-max-1mb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hzk6C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2161479-200.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

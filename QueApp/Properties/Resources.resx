@@ -118,16 +118,118 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="rain_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rain_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loading21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loading21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UnfitImportantBats_max_1mb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnfitImportantBats-max-1mb.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rain_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="499-4993022_login-account-password-comments-login-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\499-4993022_login-account-password-comments-login-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tenor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Load2new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Load2new.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="202-2021854_password-icon-png-new-password-icon-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\202-2021854_password-icon-png-new-password-icon-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kissclipart-password-icon-png-clipart-computer-icons-password-dbc9ca3bd08f47ec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kissclipart-password-icon-png-clipart-computer-icons-password-dbc9ca3bd08f47ec.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loading2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="puddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\puddle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hzk6C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hzk6C.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="breezeicons-actions-22-tool-rounded-rectangle-gasket-11563030404x2n9drsh5h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\breezeicons-actions-22-tool-rounded-rectangle-gasket-11563030404x2n9drsh5h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-button-png-login-button-png-image-18028-872" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-button-png-login-button-png-image-18028-872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="202-2021854_password-icon-png-new-password-icon-transparent-png (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\202-2021854_password-icon-png-new-password-icon-transparent-png (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0117cb0129593faa02646a8277ca80e3-security-lock-icon-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoApp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoApp1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.30839042152311824927371.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools (2)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (2)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5-53629_text-box-outline-line-rectangle-box-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-53629_text-box-outline-line-rectangle-box-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Label.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="698630-icon-114-lock-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\698630-icon-114-lock-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestLine-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuestLine-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LogoApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoApp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="73-730482_existing-user-default-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\73-730482_existing-user-default-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2161479-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2161479-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

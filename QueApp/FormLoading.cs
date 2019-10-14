@@ -20,19 +20,14 @@ namespace QueApp
           
         }
 
-        private void FormLoading_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void TimerLoad_Tick(object sender, EventArgs e)
         {
             panelLoad2.Width += 2;
             if (panelLoad2.Width >= 700)
             {
                 timerLoad.Stop();
-                FormMain formMain = new FormMain();
-                formMain.Show();
+                FormLogin formLogin = new FormLogin();
+                formLogin.Show();
                 this.Hide();
             }
         }
