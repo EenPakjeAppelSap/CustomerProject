@@ -17,11 +17,6 @@ namespace QueApp
             InitializeComponent();
         }
 
-        private void FormAskQuestion_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ButtonClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -91,5 +86,7 @@ namespace QueApp
                 MessageBox.Show("Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
             }
         }
+
     }
+ 
 }

@@ -71,6 +71,8 @@
     <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -86,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnswer.Designer.cs">
+      <DependentUpon>FormAnswer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAskQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +126,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlAnswerQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAnswerQuestions.Designer.cs">
+      <DependentUpon>UserControlAnswerQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlQuestions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlQuestions.Designer.cs">
+      <DependentUpon>UserControlQuestions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAnswer.resx">
+      <DependentUpon>FormAnswer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAskQuestion.resx">
       <DependentUpon>FormAskQuestion.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +166,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlAnswerQuestions.resx">
+      <DependentUpon>UserControlAnswerQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlQuestions.resx">
+      <DependentUpon>UserControlQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace QueApp
 {
@@ -15,16 +16,8 @@ namespace QueApp
     {
         public FormMain()
         {
-            //Thread trd = new Thread(new ThreadStart(formRun));
-            //trd.Start();
-            //Thread.Sleep(5000);
             InitializeComponent();
-            //trd.Abort();
-        }
-
-        private void formRun()
-        {
-            Application.Run(new FormLoading2());
+            panelQuestions.AutoScrollMinSize = new Size(0, 1700);
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -61,5 +54,7 @@ namespace QueApp
         {
             position(buttonHome);
         }
+
+       
     }
 }

@@ -306,7 +306,6 @@ namespace QueApp
             this.textBoxStep1.Name = "textBoxStep1";
             this.textBoxStep1.Size = new System.Drawing.Size(331, 20);
             this.textBoxStep1.TabIndex = 1;
-            this.textBoxStep1.Text = "Onderwerp";
             // 
             // panel1
             // 
@@ -330,6 +329,7 @@ namespace QueApp
             // 
             // buttonMinus
             // 
+            this.buttonMinus.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonMinus.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinus.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,11 +339,12 @@ namespace QueApp
             this.buttonMinus.Size = new System.Drawing.Size(75, 42);
             this.buttonMinus.TabIndex = 1;
             this.buttonMinus.Text = "-";
-            this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.UseVisualStyleBackColor = false;
             this.buttonMinus.Click += new System.EventHandler(this.ButtonMinus_Click);
             // 
             // buttonClose
             // 
+            this.buttonClose.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -353,7 +354,7 @@ namespace QueApp
             this.buttonClose.Size = new System.Drawing.Size(75, 42);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // FormAskQuestion
