@@ -187,7 +187,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="QueApp_TemporaryKey.pfx" />
     <None Include="Resources\cloud.png" />
   </ItemGroup>
   <ItemGroup>
