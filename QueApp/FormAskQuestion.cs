@@ -85,6 +85,10 @@ namespace QueApp
                 checkBoxStep4j.Checked = false;
                 MessageBox.Show("Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
             }
+            else
+            {
+                QuestionHelper.SetQuestion("", "", "false",,,,,,,,,,, "true")
+            }
         }
 
     }
