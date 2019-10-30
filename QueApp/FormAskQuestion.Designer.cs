@@ -48,11 +48,12 @@ namespace QueApp
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.labelStep2 = new System.Windows.Forms.Label();
             this.labelStep1 = new System.Windows.Forms.Label();
-            this.textBoxStep1 = new System.Windows.Forms.TextBox();
+            this.textBoxSubject = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelAskQuestion = new System.Windows.Forms.Label();
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.panelBackGround2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace QueApp
             // panelBackGround2
             // 
             this.panelBackGround2.BackColor = System.Drawing.Color.LightGray;
+            this.panelBackGround2.Controls.Add(this.textBoxTitle);
             this.panelBackGround2.Controls.Add(this.buttonConfirm);
             this.panelBackGround2.Controls.Add(this.labeltextBox3);
             this.panelBackGround2.Controls.Add(this.textBoxStep4);
@@ -79,11 +81,11 @@ namespace QueApp
             this.panelBackGround2.Controls.Add(this.comboBoxSubject);
             this.panelBackGround2.Controls.Add(this.labelStep2);
             this.panelBackGround2.Controls.Add(this.labelStep1);
-            this.panelBackGround2.Controls.Add(this.textBoxStep1);
+            this.panelBackGround2.Controls.Add(this.textBoxSubject);
             this.panelBackGround2.Controls.Add(this.panel1);
             this.panelBackGround2.Location = new System.Drawing.Point(0, 0);
             this.panelBackGround2.Name = "panelBackGround2";
-            this.panelBackGround2.Size = new System.Drawing.Size(1084, 516);
+            this.panelBackGround2.Size = new System.Drawing.Size(1084, 565);
             this.panelBackGround2.TabIndex = 4;
             // 
             // buttonConfirm
@@ -92,7 +94,7 @@ namespace QueApp
             this.buttonConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfirm.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonConfirm.Location = new System.Drawing.Point(84, 466);
+            this.buttonConfirm.Location = new System.Drawing.Point(79, 518);
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.Size = new System.Drawing.Size(167, 37);
             this.buttonConfirm.TabIndex = 21;
@@ -104,7 +106,7 @@ namespace QueApp
             // 
             this.labeltextBox3.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltextBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labeltextBox3.Location = new System.Drawing.Point(325, 403);
+            this.labeltextBox3.Location = new System.Drawing.Point(320, 455);
             this.labeltextBox3.Name = "labeltextBox3";
             this.labeltextBox3.Size = new System.Drawing.Size(456, 25);
             this.labeltextBox3.TabIndex = 20;
@@ -113,11 +115,10 @@ namespace QueApp
             // 
             // textBoxStep4
             // 
-            this.textBoxStep4.Location = new System.Drawing.Point(326, 431);
+            this.textBoxStep4.Location = new System.Drawing.Point(321, 483);
             this.textBoxStep4.Name = "textBoxStep4";
             this.textBoxStep4.Size = new System.Drawing.Size(331, 20);
             this.textBoxStep4.TabIndex = 19;
-            this.textBoxStep4.Text = "Stap4";
             this.textBoxStep4.Visible = false;
             // 
             // checkBoxStep4n
@@ -125,7 +126,7 @@ namespace QueApp
             this.checkBoxStep4n.AutoSize = true;
             this.checkBoxStep4n.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxStep4n.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxStep4n.Location = new System.Drawing.Point(178, 404);
+            this.checkBoxStep4n.Location = new System.Drawing.Point(173, 456);
             this.checkBoxStep4n.Name = "checkBoxStep4n";
             this.checkBoxStep4n.Size = new System.Drawing.Size(57, 24);
             this.checkBoxStep4n.TabIndex = 18;
@@ -138,7 +139,7 @@ namespace QueApp
             this.checkBoxStep4j.AutoSize = true;
             this.checkBoxStep4j.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxStep4j.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxStep4j.Location = new System.Drawing.Point(106, 404);
+            this.checkBoxStep4j.Location = new System.Drawing.Point(101, 456);
             this.checkBoxStep4j.Name = "checkBoxStep4j";
             this.checkBoxStep4j.Size = new System.Drawing.Size(45, 24);
             this.checkBoxStep4j.TabIndex = 17;
@@ -150,17 +151,17 @@ namespace QueApp
             // 
             this.labelStep4.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStep4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStep4.Location = new System.Drawing.Point(43, 355);
+            this.labelStep4.Location = new System.Drawing.Point(38, 309);
             this.labelStep4.Name = "labelStep4";
             this.labelStep4.Size = new System.Drawing.Size(685, 37);
             this.labelStep4.TabIndex = 16;
-            this.labelStep4.Text = "4.  Heb jij al stappen ondernomen?";
+            this.labelStep4.Text = "3.  Heb jij al stappen ondernomen?";
             // 
             // labeltextBox2
             // 
             this.labeltextBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltextBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labeltextBox2.Location = new System.Drawing.Point(325, 292);
+            this.labeltextBox2.Location = new System.Drawing.Point(320, 344);
             this.labeltextBox2.Name = "labeltextBox2";
             this.labeltextBox2.Size = new System.Drawing.Size(294, 25);
             this.labeltextBox2.TabIndex = 15;
@@ -169,11 +170,10 @@ namespace QueApp
             // 
             // textBoxStep3
             // 
-            this.textBoxStep3.Location = new System.Drawing.Point(326, 320);
+            this.textBoxStep3.Location = new System.Drawing.Point(321, 372);
             this.textBoxStep3.Name = "textBoxStep3";
             this.textBoxStep3.Size = new System.Drawing.Size(331, 20);
             this.textBoxStep3.TabIndex = 14;
-            this.textBoxStep3.Text = "Stap3";
             this.textBoxStep3.Visible = false;
             // 
             // checkBoxStep3n
@@ -181,7 +181,7 @@ namespace QueApp
             this.checkBoxStep3n.AutoSize = true;
             this.checkBoxStep3n.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxStep3n.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxStep3n.Location = new System.Drawing.Point(178, 297);
+            this.checkBoxStep3n.Location = new System.Drawing.Point(173, 349);
             this.checkBoxStep3n.Name = "checkBoxStep3n";
             this.checkBoxStep3n.Size = new System.Drawing.Size(57, 24);
             this.checkBoxStep3n.TabIndex = 13;
@@ -194,7 +194,7 @@ namespace QueApp
             this.checkBoxStep3j.AutoSize = true;
             this.checkBoxStep3j.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxStep3j.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxStep3j.Location = new System.Drawing.Point(106, 297);
+            this.checkBoxStep3j.Location = new System.Drawing.Point(101, 349);
             this.checkBoxStep3j.Name = "checkBoxStep3j";
             this.checkBoxStep3j.Size = new System.Drawing.Size(45, 24);
             this.checkBoxStep3j.TabIndex = 12;
@@ -206,17 +206,17 @@ namespace QueApp
             // 
             this.labelStep3.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStep3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStep3.Location = new System.Drawing.Point(43, 246);
+            this.labelStep3.Location = new System.Drawing.Point(38, 407);
             this.labelStep3.Name = "labelStep3";
             this.labelStep3.Size = new System.Drawing.Size(685, 37);
             this.labelStep3.TabIndex = 11;
-            this.labelStep3.Text = "3.  Heb jij een ander student om hulp gevraagd?";
+            this.labelStep3.Text = "4.  Heb jij een ander student om hulp gevraagd?";
             // 
             // labelPrio
             // 
             this.labelPrio.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelPrio.Location = new System.Drawing.Point(424, 182);
+            this.labelPrio.Location = new System.Drawing.Point(419, 234);
             this.labelPrio.Name = "labelPrio";
             this.labelPrio.Size = new System.Drawing.Size(125, 25);
             this.labelPrio.TabIndex = 10;
@@ -226,7 +226,7 @@ namespace QueApp
             // 
             this.labelTeacher.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTeacher.Location = new System.Drawing.Point(252, 182);
+            this.labelTeacher.Location = new System.Drawing.Point(247, 234);
             this.labelTeacher.Name = "labelTeacher";
             this.labelTeacher.Size = new System.Drawing.Size(125, 25);
             this.labelTeacher.TabIndex = 9;
@@ -236,7 +236,7 @@ namespace QueApp
             // 
             this.labelVak.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVak.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelVak.Location = new System.Drawing.Point(74, 182);
+            this.labelVak.Location = new System.Drawing.Point(69, 234);
             this.labelVak.Name = "labelVak";
             this.labelVak.Size = new System.Drawing.Size(125, 25);
             this.labelVak.TabIndex = 8;
@@ -247,7 +247,7 @@ namespace QueApp
             this.comboBoxPrio.FormattingEnabled = true;
             this.comboBoxPrio.Items.AddRange(new object[] {
             "Normaal"});
-            this.comboBoxPrio.Location = new System.Drawing.Point(427, 208);
+            this.comboBoxPrio.Location = new System.Drawing.Point(422, 260);
             this.comboBoxPrio.Name = "comboBoxPrio";
             this.comboBoxPrio.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPrio.TabIndex = 7;
@@ -262,7 +262,7 @@ namespace QueApp
             "CST",
             "JBD",
             "CAB"});
-            this.comboBoxTeacher.Location = new System.Drawing.Point(256, 208);
+            this.comboBoxTeacher.Location = new System.Drawing.Point(251, 260);
             this.comboBoxTeacher.Name = "comboBoxTeacher";
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 6;
@@ -275,7 +275,7 @@ namespace QueApp
             "Web",
             "Database",
             "Game"});
-            this.comboBoxSubject.Location = new System.Drawing.Point(79, 208);
+            this.comboBoxSubject.Location = new System.Drawing.Point(74, 260);
             this.comboBoxSubject.Name = "comboBoxSubject";
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 5;
@@ -284,7 +284,7 @@ namespace QueApp
             // 
             this.labelStep2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStep2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStep2.Location = new System.Drawing.Point(43, 145);
+            this.labelStep2.Location = new System.Drawing.Point(38, 197);
             this.labelStep2.Name = "labelStep2";
             this.labelStep2.Size = new System.Drawing.Size(614, 37);
             this.labelStep2.TabIndex = 4;
@@ -294,18 +294,20 @@ namespace QueApp
             // 
             this.labelStep1.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStep1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStep1.Location = new System.Drawing.Point(43, 61);
+            this.labelStep1.Location = new System.Drawing.Point(38, 69);
             this.labelStep1.Name = "labelStep1";
-            this.labelStep1.Size = new System.Drawing.Size(367, 37);
+            this.labelStep1.Size = new System.Drawing.Size(477, 37);
             this.labelStep1.TabIndex = 3;
-            this.labelStep1.Text = "1.   Vul het onderwerp in";
+            this.labelStep1.Text = "1.   Vul onderwerp en titel in";
             // 
-            // textBoxStep1
+            // textBoxSubject
             // 
-            this.textBoxStep1.Location = new System.Drawing.Point(79, 113);
-            this.textBoxStep1.Name = "textBoxStep1";
-            this.textBoxStep1.Size = new System.Drawing.Size(331, 20);
-            this.textBoxStep1.TabIndex = 1;
+            this.textBoxSubject.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSubject.Location = new System.Drawing.Point(74, 126);
+            this.textBoxSubject.Name = "textBoxSubject";
+            this.textBoxSubject.Size = new System.Drawing.Size(331, 22);
+            this.textBoxSubject.TabIndex = 1;
+            this.textBoxSubject.Text = "Onderwerp";
             // 
             // panel1
             // 
@@ -357,15 +359,24 @@ namespace QueApp
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
+            // textBoxTitle
+            // 
+            this.textBoxTitle.Font = new System.Drawing.Font("Nirmala UI", 8.25F);
+            this.textBoxTitle.Location = new System.Drawing.Point(74, 166);
+            this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.Size = new System.Drawing.Size(331, 22);
+            this.textBoxTitle.TabIndex = 22;
+            this.textBoxTitle.Text = "Titel";
+            // 
             // FormAskQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 515);
+            this.ClientSize = new System.Drawing.Size(1084, 565);
             this.Controls.Add(this.panelBackGround2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAskQuestion";
-            this.Text = "FormAskQuestion";
+            this.Text = " ";
             this.panelBackGround2.ResumeLayout(false);
             this.panelBackGround2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -399,6 +410,7 @@ namespace QueApp
         private System.Windows.Forms.Label labeltextBox3;
         private System.Windows.Forms.TextBox textBoxStep4;
         private System.Windows.Forms.Button buttonConfirm;
-        private System.Windows.Forms.TextBox textBoxStep1;
+        private System.Windows.Forms.TextBox textBoxSubject;
+        private System.Windows.Forms.TextBox textBoxTitle;
     }
 }

@@ -48,8 +48,9 @@ namespace QueApp
             if (checkBoxStep3n.Checked)
             {
                 checkBoxStep3j.Checked = false;
-                MessageBox.Show("Je dient eerst een ander student om hulp te vragen voordat je verder kunt");
+                MessageBox.Show(" Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
             }
+           
         }
 
         private void CheckBoxStep4j_CheckedChanged(object sender, EventArgs e)
@@ -83,10 +84,11 @@ namespace QueApp
             if (checkBoxStep4n.Checked)
             {
                 checkBoxStep4j.Checked = false;
-                MessageBox.Show("Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
+                MessageBox.Show("Je dient eerst een ander student om hulp te vragen voordat je verder kunt");
             }
         }
 
+ 
     }
  
 }

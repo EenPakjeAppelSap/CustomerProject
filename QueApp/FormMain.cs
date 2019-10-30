@@ -17,7 +17,7 @@ namespace QueApp
         public FormMain()
         {
             InitializeComponent();
-            panelQuestions.AutoScrollMinSize = new Size(0, 1700);
+            //panelQuestions.AutoScrollMinSize = new Size(0, 1700);
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -43,6 +43,8 @@ namespace QueApp
             position(buttonAskQuestion);
             FormAskQuestion formLogin = new FormAskQuestion();
             formLogin.Show();
+
+
         }
 
         private void buttonMyQuestions_Click(object sender, EventArgs e)

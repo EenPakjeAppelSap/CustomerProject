@@ -285,7 +285,7 @@ namespace QueApp
             this.labelStudent.Name = "labelStudent";
             this.labelStudent.Size = new System.Drawing.Size(169, 41);
             this.labelStudent.TabIndex = 27;
-            this.labelStudent.Text = "s";
+            this.labelStudent.Text = "Voor en achernaam";
             // 
             // labelVan
             // 

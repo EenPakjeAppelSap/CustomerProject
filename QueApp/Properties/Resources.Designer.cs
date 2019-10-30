@@ -143,6 +143,16 @@ namespace QueApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5_53629_text_box_outline_line_rectangle_box_png1 {
+            get {
+                object obj = ResourceManager.GetObject("5-53629_text-box-outline-line-rectangle-box-png1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _698630_icon_114_lock_512 {
             get {
                 object obj = ResourceManager.GetObject("698630-icon-114-lock-512", resourceCulture);
@@ -196,6 +206,16 @@ namespace QueApp.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_resize_MYfU6fhiFr3TNaJ {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-resize-MYfU6fhiFr3TNaJ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -334,6 +354,26 @@ namespace QueApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__1_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap output_onlinepngtools__2_ {
             get {
                 object obj = ResourceManager.GetObject("output-onlinepngtools (2)", resourceCulture);
@@ -404,6 +444,26 @@ namespace QueApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap resize_15723373251393051718outputonlinepngtools1 {
+            get {
+                object obj = ResourceManager.GetObject("resize-15723373251393051718outputonlinepngtools1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resize_157233782819933590outputonlinepngtools1 {
+            get {
+                object obj = ResourceManager.GetObject("resize-157233782819933590outputonlinepngtools1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tenor {
             get {
                 object obj = ResourceManager.GetObject("tenor", resourceCulture);
@@ -437,6 +497,16 @@ namespace QueApp.Properties {
         internal static System.Drawing.Bitmap vietnam_tag_rectangle_with_rounded_corners_asset_embellishment_grey_cream {
             get {
                 object obj = ResourceManager.GetObject("vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+            get {
+                object obj = ResourceManager.GetObject("Webp.net-resizeimage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

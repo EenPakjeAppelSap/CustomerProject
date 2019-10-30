@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resize-15723373251393051718outputonlinepngtools1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resize-15723373251393051718outputonlinepngtools1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\106-1069470_user-profile-computer-icons-facebook-avatar-rinoa-an1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,20 +136,29 @@
   <data name="rain_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rain_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LogoApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoApp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="499-4993022_login-account-password-comments-login-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\499-4993022_login-account-password-comments-login-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tenor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Load2new" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Load2new.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="output-onlinepngtools (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2161479-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2161479-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="202-2021854_password-icon-png-new-password-icon-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\202-2021854_password-icon-png-new-password-icon-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vietnam-tag-rectangle-with-rounded-corners-asset-embellishment-grey-cream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +172,8 @@
   <data name="puddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\puddle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="no_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="output-onlinepngtools (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\output-onlinepngtools (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,9 +190,6 @@
   <data name="login-button-png-login-button-png-image-18028-872" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login-button-png-login-button-png-image-18028-872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,6 +204,12 @@
   </data>
   <data name="LogoApp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoApp1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="output-onlinepngtools (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\output-onlinepngtools (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.30839042152311824927371.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,22 +229,28 @@
   <data name="698630-icon-114-lock-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\698630-icon-114-lock-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="output-onlinepngtools (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\output-onlinepngtools (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Load2new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Load2new.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgonline-com-ua-resize-MYfU6fhiFr3TNaJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgonline-com-ua-resize-MYfU6fhiFr3TNaJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5-53629_text-box-outline-line-rectangle-box-png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-53629_text-box-outline-line-rectangle-box-png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QuestLine-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QuestLine-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoApp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-password-manager-computer-icons-user-ottoman-5ac8f0a942d2e2.3083904215231182492737.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="73-730482_existing-user-default-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\73-730482_existing-user-default-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="no_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Webp.net-resizeimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Webp.net-resizeimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2161479-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2161479-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="resize-157233782819933590outputonlinepngtools1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resize-157233782819933590outputonlinepngtools1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
