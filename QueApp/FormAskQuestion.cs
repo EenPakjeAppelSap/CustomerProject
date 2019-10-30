@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QueApp
-{
+{    
     public partial class FormAskQuestion : Form
-    {
+    {        
         public FormAskQuestion()
         {
             InitializeComponent();
@@ -93,5 +93,4 @@ namespace QueApp
             QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", "", "", true);
         }
     }
- 
 }

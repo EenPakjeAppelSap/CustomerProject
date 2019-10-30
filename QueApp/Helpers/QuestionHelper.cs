@@ -10,18 +10,7 @@ using System.Threading.Tasks;
 namespace QueApp
 {
     public class QuestionHelper
-    {
-        private static string UserLogin()
-        {
-            var request = WebRequest.Create("https://stemmachine.azurewebsites.net/api/GetParty?code=vNX2uVSyNFCmAhsIoIsinwYaZWwCSVXVprr8nkpTbmyukvhEO5nrdg==");
-            request.ContentType = "application/json";
-            request.Method = "GET";
-            var response = (HttpWebResponse)request.GetResponse();
-
-            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-            return responseString;
-        }
-
+    {       
         //private static string SetQuestion()
         //{
         //    var request = WebRequest.Create("https://queapp.azurewebsites.net/api/SetQuestion?code=xbd/hedegNoJq0reGeTI1SaTk8S0LvCjbPsev2Nc1xr6tmYl14UtnA==");

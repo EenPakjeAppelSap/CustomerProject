@@ -28,7 +28,7 @@ namespace QueApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panelUsername = new System.Windows.Forms.Panel();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -36,23 +36,23 @@ namespace QueApp
             this.pictureBoxUsername = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBoxUsername
+            // textBoxEmail
             // 
-            this.textBoxUsername.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUsername.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(649, 215);
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(225, 26);
-            this.textBoxUsername.TabIndex = 2;
-            this.textBoxUsername.Click += new System.EventHandler(this.TextBoxUsername_Click);
+            this.textBoxEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.Location = new System.Drawing.Point(649, 215);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(225, 26);
+            this.textBoxEmail.TabIndex = 2;
+            this.textBoxEmail.Click += new System.EventHandler(this.TextBoxUsername_Click);
             // 
             // panelUsername
             // 
@@ -123,39 +123,39 @@ namespace QueApp
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.ButtonLogin_Click);
             // 
-            // label1
+            // labelEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(681, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 21);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Username";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Location = new System.Drawing.Point(681, 174);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(48, 21);
+            this.labelEmail.TabIndex = 8;
+            this.labelEmail.Text = "Email";
             // 
-            // label2
+            // labelPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(681, 290);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Password";
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(681, 290);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(76, 21);
+            this.labelPassword.TabIndex = 9;
+            this.labelPassword.Text = "Password";
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 598);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.panelPassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.pictureBoxPassword);
             this.Controls.Add(this.panelUsername);
-            this.Controls.Add(this.textBoxUsername);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.pictureBoxUsername);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -175,13 +175,13 @@ namespace QueApp
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBoxUsername;
-        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Panel panelUsername;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelPassword;
     }
 }
