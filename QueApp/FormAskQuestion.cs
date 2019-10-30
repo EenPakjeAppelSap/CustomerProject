@@ -86,6 +86,10 @@ namespace QueApp
                 checkBoxStep4j.Checked = false;
                 MessageBox.Show("Je dient eerst een ander student om hulp te vragen voordat je verder kunt");
             }
+            else
+            {
+                QuestionHelper.SetQuestion("", "", "false",,,,,,,,,,, "true")
+            }
         }
 
  
