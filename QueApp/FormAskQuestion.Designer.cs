@@ -110,6 +110,7 @@ namespace QueApp
             this.buttonConfirm.Text = "Bevestig vraag";
             this.buttonConfirm.UseVisualStyleBackColor = false;
             this.buttonConfirm.Visible = false;
+            this.buttonConfirm.Click += new System.EventHandler(this.ButtonConfirm_Click);
             // 
             // labeltextBox3
             // 

@@ -85,14 +85,13 @@ namespace QueApp
             {
                 checkBoxStep4j.Checked = false;
                 MessageBox.Show("Je dient eerst een ander student om hulp te vragen voordat je verder kunt");
-            }
-            else
-            {
-                QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "","", "", true);
-            }
+            }                           
         }
 
- 
+        private void ButtonConfirm_Click(object sender, EventArgs e)
+        {
+            QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", "", "", true);
+        }
     }
  
 }
