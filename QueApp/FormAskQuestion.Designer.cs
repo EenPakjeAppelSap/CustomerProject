@@ -29,14 +29,15 @@ namespace QueApp
         private void InitializeComponent()
         {
             this.panelBackGround2 = new System.Windows.Forms.Panel();
+            this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.labeltextBox3 = new System.Windows.Forms.Label();
-            this.textBoxStep4 = new System.Windows.Forms.TextBox();
+            this.textBoxQuestion2 = new System.Windows.Forms.TextBox();
             this.checkBoxStep4n = new System.Windows.Forms.CheckBox();
             this.checkBoxStep4j = new System.Windows.Forms.CheckBox();
             this.labelStep4 = new System.Windows.Forms.Label();
             this.labeltextBox2 = new System.Windows.Forms.Label();
-            this.textBoxStep3 = new System.Windows.Forms.TextBox();
+            this.textBoxQuestion1 = new System.Windows.Forms.TextBox();
             this.checkBoxStep3n = new System.Windows.Forms.CheckBox();
             this.checkBoxStep3j = new System.Windows.Forms.CheckBox();
             this.labelStep3 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@ namespace QueApp
             this.labelAskQuestion = new System.Windows.Forms.Label();
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.panelBackGround2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,12 +64,12 @@ namespace QueApp
             this.panelBackGround2.Controls.Add(this.textBoxTitle);
             this.panelBackGround2.Controls.Add(this.buttonConfirm);
             this.panelBackGround2.Controls.Add(this.labeltextBox3);
-            this.panelBackGround2.Controls.Add(this.textBoxStep4);
+            this.panelBackGround2.Controls.Add(this.textBoxQuestion2);
             this.panelBackGround2.Controls.Add(this.checkBoxStep4n);
             this.panelBackGround2.Controls.Add(this.checkBoxStep4j);
             this.panelBackGround2.Controls.Add(this.labelStep4);
             this.panelBackGround2.Controls.Add(this.labeltextBox2);
-            this.panelBackGround2.Controls.Add(this.textBoxStep3);
+            this.panelBackGround2.Controls.Add(this.textBoxQuestion1);
             this.panelBackGround2.Controls.Add(this.checkBoxStep3n);
             this.panelBackGround2.Controls.Add(this.checkBoxStep3j);
             this.panelBackGround2.Controls.Add(this.labelStep3);
@@ -87,6 +87,15 @@ namespace QueApp
             this.panelBackGround2.Name = "panelBackGround2";
             this.panelBackGround2.Size = new System.Drawing.Size(1084, 565);
             this.panelBackGround2.TabIndex = 4;
+            // 
+            // textBoxTitle
+            // 
+            this.textBoxTitle.Font = new System.Drawing.Font("Nirmala UI", 8.25F);
+            this.textBoxTitle.Location = new System.Drawing.Point(74, 166);
+            this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.Size = new System.Drawing.Size(331, 22);
+            this.textBoxTitle.TabIndex = 22;
+            this.textBoxTitle.Text = "Titel";
             // 
             // buttonConfirm
             // 
@@ -113,13 +122,13 @@ namespace QueApp
             this.labeltextBox3.Text = "Vul in welke stappen jij hebt ondernomen";
             this.labeltextBox3.Visible = false;
             // 
-            // textBoxStep4
+            // textBoxQuestion2
             // 
-            this.textBoxStep4.Location = new System.Drawing.Point(321, 483);
-            this.textBoxStep4.Name = "textBoxStep4";
-            this.textBoxStep4.Size = new System.Drawing.Size(331, 20);
-            this.textBoxStep4.TabIndex = 19;
-            this.textBoxStep4.Visible = false;
+            this.textBoxQuestion2.Location = new System.Drawing.Point(321, 483);
+            this.textBoxQuestion2.Name = "textBoxQuestion2";
+            this.textBoxQuestion2.Size = new System.Drawing.Size(331, 20);
+            this.textBoxQuestion2.TabIndex = 19;
+            this.textBoxQuestion2.Visible = false;
             // 
             // checkBoxStep4n
             // 
@@ -168,13 +177,13 @@ namespace QueApp
             this.labeltextBox2.Text = "Vul in wat er besproken is";
             this.labeltextBox2.Visible = false;
             // 
-            // textBoxStep3
+            // textBoxQuestion1
             // 
-            this.textBoxStep3.Location = new System.Drawing.Point(321, 372);
-            this.textBoxStep3.Name = "textBoxStep3";
-            this.textBoxStep3.Size = new System.Drawing.Size(331, 20);
-            this.textBoxStep3.TabIndex = 14;
-            this.textBoxStep3.Visible = false;
+            this.textBoxQuestion1.Location = new System.Drawing.Point(321, 372);
+            this.textBoxQuestion1.Name = "textBoxQuestion1";
+            this.textBoxQuestion1.Size = new System.Drawing.Size(331, 20);
+            this.textBoxQuestion1.TabIndex = 14;
+            this.textBoxQuestion1.Visible = false;
             // 
             // checkBoxStep3n
             // 
@@ -359,15 +368,6 @@ namespace QueApp
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
-            // textBoxTitle
-            // 
-            this.textBoxTitle.Font = new System.Drawing.Font("Nirmala UI", 8.25F);
-            this.textBoxTitle.Location = new System.Drawing.Point(74, 166);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(331, 22);
-            this.textBoxTitle.TabIndex = 22;
-            this.textBoxTitle.Text = "Titel";
-            // 
             // FormAskQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,13 +402,13 @@ namespace QueApp
         private System.Windows.Forms.Label labelStep3;
         private System.Windows.Forms.CheckBox checkBoxStep3n;
         private System.Windows.Forms.CheckBox checkBoxStep3j;
-        private System.Windows.Forms.TextBox textBoxStep3;
+        private System.Windows.Forms.TextBox textBoxQuestion1;
         private System.Windows.Forms.Label labeltextBox2;
         private System.Windows.Forms.Label labelStep4;
         private System.Windows.Forms.CheckBox checkBoxStep4n;
         private System.Windows.Forms.CheckBox checkBoxStep4j;
         private System.Windows.Forms.Label labeltextBox3;
-        private System.Windows.Forms.TextBox textBoxStep4;
+        private System.Windows.Forms.TextBox textBoxQuestion2;
         private System.Windows.Forms.Button buttonConfirm;
         private System.Windows.Forms.TextBox textBoxSubject;
         private System.Windows.Forms.TextBox textBoxTitle;

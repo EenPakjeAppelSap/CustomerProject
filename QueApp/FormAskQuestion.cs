@@ -31,14 +31,14 @@ namespace QueApp
         {
             if (!checkBoxStep3j.Checked)
             {
-              textBoxStep3.Visible = false;
+              textBoxQuestion1.Visible = false;
               labeltextBox2.Visible = false;
             }
 
             if (checkBoxStep3j.Checked)
             {
                 checkBoxStep3n.Checked = false;
-                textBoxStep3.Visible = true;
+                textBoxQuestion1.Visible = true;
                 labeltextBox2.Visible = true;
             }
         }
@@ -57,14 +57,14 @@ namespace QueApp
         {
             if (!checkBoxStep4j.Checked)
             {
-                textBoxStep4.Visible = false;
+                textBoxQuestion2.Visible = false;
                 labeltextBox3.Visible = false;
             }
 
             if (checkBoxStep4j.Checked)
             {
                 checkBoxStep4n.Checked = false;
-                textBoxStep4.Visible = true;
+                textBoxQuestion2.Visible = true;
                 labeltextBox3.Visible = true;
             }
 
