@@ -32,7 +32,6 @@ namespace QueApp
         //    var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
         //    return responseString;
         //}
-
         public static void SetQuestion(string rowKey, string partitionKey,bool update, string title,string description, string category1, string category2, string category3,string question1, string question2,string answer, string askedBy,string answeredBy,bool isActive)
         {
             var request = WebRequest.Create("https://queapp.azurewebsites.net/api/SetQuestion?code=xbd/hedegNoJq0reGeTI1SaTk8S0LvCjbPsev2Nc1xr6tmYl14UtnA==");

@@ -88,7 +88,7 @@ namespace QueApp
             }
             else
             {
-                QuestionHelper.SetQuestion("", "", "false",textBoxTitle.Text,textBoxSubject.Text,comboBoxSubject.SelectedItem,comboBoxTeacher.SelectedItem,comboBoxPrio.SelectedItem,,,,,, "true")
+                QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "","", "", true);
             }
         }
 
