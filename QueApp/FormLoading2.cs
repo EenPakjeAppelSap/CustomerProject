@@ -22,7 +22,7 @@ namespace QueApp
             timerLoading2.Start();
         }
 
-        int move = 2;
+
 
         private void TimerLoading2_Tick(object sender, EventArgs e)
         {

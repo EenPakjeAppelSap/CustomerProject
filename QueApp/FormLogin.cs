@@ -17,6 +17,7 @@ namespace QueApp
         {
             InitializeComponent();
         }
+
         private void TextBoxUsername_Click(object sender, EventArgs e)
         {
             textBoxPassword.Clear();
@@ -27,10 +28,11 @@ namespace QueApp
         private void TextBoxPassword_Click(object sender, EventArgs e)
         {
             textBoxPassword.Clear();
-            textBoxPassword.PasswordChar = '*';
             pictureBoxPassword.BackgroundImage = Properties.Resources.no_user;
             panelPassword.ForeColor = Color.FromArgb(97, 166, 186);
             panelPassword.BackColor = Color.FromArgb(97, 166, 186);
+            textBoxPassword.ForeColor = Color.FromArgb(97, 166, 186);
+
         }
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
@@ -56,5 +58,6 @@ namespace QueApp
                 MessageBox.Show("Email or Password are empty. Please fill in!");
             }
         }
+
     }
 }

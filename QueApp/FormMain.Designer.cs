@@ -143,11 +143,11 @@ namespace QueApp
             this.panelQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelQuestions.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panelQuestions.Location = new System.Drawing.Point(1, 145);
+            this.panelQuestions.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelQuestions.Location = new System.Drawing.Point(0, 143);
             this.panelQuestions.Margin = new System.Windows.Forms.Padding(2);
             this.panelQuestions.Name = "panelQuestions";
-            this.panelQuestions.Size = new System.Drawing.Size(1192, 489);
+            this.panelQuestions.Size = new System.Drawing.Size(1193, 491);
             this.panelQuestions.TabIndex = 59;
             // 
             // FormMain

@@ -50,6 +50,7 @@ namespace QueApp
             this.textBoxEmail.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.Location = new System.Drawing.Point(649, 215);
             this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.PasswordChar = '*';
             this.textBoxEmail.Size = new System.Drawing.Size(225, 26);
             this.textBoxEmail.TabIndex = 2;
             this.textBoxEmail.Click += new System.EventHandler(this.TextBoxUsername_Click);
