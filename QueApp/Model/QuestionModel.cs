@@ -19,6 +19,9 @@ namespace QueApp.Model
         public string Question2 { get; set; }
         public string Answer { get; set; }
         public string AskedBy { get; set; }
+        public string AnsweredBy { get; set; }
+        public DateTime AskedDateTime { get; set; }
+        public DateTime AnsweredDateTime { get; set; }
         public bool IsActive { get; set; }
     }
 }

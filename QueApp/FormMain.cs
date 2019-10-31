@@ -40,7 +40,7 @@ namespace QueApp
         {
             position(buttonAskQuestion);
             FormAskQuestion formLogin = new FormAskQuestion();
-            formLogin.Show();
+            formLogin.ShowDialog();
         }
 
         private void buttonMyQuestions_Click(object sender, EventArgs e)
