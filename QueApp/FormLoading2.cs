@@ -18,10 +18,9 @@ namespace QueApp
             var questions = QuestionHelper.GetQuestion();
         }
         private void FormLoading2_Load(object sender, EventArgs e)
-        {            
+        {
             timerLoading2.Start();
         }
-        
         private void TimerLoading2_Tick(object sender, EventArgs e)
         {
             panelLoad2.Width += 1;
@@ -32,9 +31,6 @@ namespace QueApp
                 formMain.ShowDialog();
                 this.Hide();
             }
-
         }
-
-
     }
 }

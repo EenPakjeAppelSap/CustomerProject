@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace QueApp
 {
@@ -53,6 +54,40 @@ namespace QueApp
             position(buttonHome);
         }
 
-       
+        private void SetQuestionsInPanel()
+        {
+
+            string responseString = QuestionHelper.GetQuestion();
+            var questions = JsonConvert.DeserializeObject<List<Model.QuestionModel>>(responseString);
+            var rowNr = 0;
+
+
+            foreach (var question in questions)
+            {
+                UserControlQuestions ucQuestion = new UserControlQuestions();
+
+                ucQuestion.PartitionKey = question.PartitionKey;
+                ucQuestion.RowKey = question.RowKey;
+                ucQuestion.Title = question.Title;
+                ucQuestion.Description = question.Description;
+                ucQuestion.Category1 = question.Category1;
+                ucQuestion.Category2 = question.Category2;
+                ucQuestion.Category3 = question.Category3;
+                ucQuestion.Question1 = question.Question1;
+                ucQuestion.Question2 = question.Question2;
+                ucQuestion.Answer = question.Answer;
+                ucQuestion.AskedBy = question.AskedBy;
+                ucQuestion.AnsweredBy = question.AnsweredBy;
+                ucQuestion.AskedDateTime = question.AskedDateTime;
+                ucQuestion.AnsweredDateTime = question.AnsweredDateTime;
+                ucQuestion.Top = 300 * rowNr;
+
+                panelQuestions.Controls.Add(ucQuestion);
+
+                rowNr++;
+            }
+        }
+
+
     }
 }
