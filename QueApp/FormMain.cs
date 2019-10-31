@@ -18,7 +18,8 @@ namespace QueApp
         public FormMain()
         {
             InitializeComponent();
-            //panelQuestions.AutoScrollMinSize = new Size(0, 1700);
+            SetQuestionsInPanel();
+            panelQuestions.AutoScrollMinSize = new Size(0, 1700);
         }
 
         private void FormMain_Load(object sender, EventArgs e)

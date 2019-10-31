@@ -27,9 +27,9 @@ namespace QueApp
             if (panelLoad2.Width >= 700)
             {
                 timerLoading2.Stop();
-                FormMain formMain = new FormMain();
+                FormMain formMain = new FormMain();                
+                this.Close();
                 formMain.ShowDialog();
-                this.Hide();
             }
         }
     }
