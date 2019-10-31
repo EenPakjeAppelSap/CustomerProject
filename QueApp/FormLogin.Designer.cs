@@ -50,7 +50,6 @@ namespace QueApp
             this.textBoxEmail.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.Location = new System.Drawing.Point(649, 215);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.PasswordChar = '*';
             this.textBoxEmail.Size = new System.Drawing.Size(225, 26);
             this.textBoxEmail.TabIndex = 2;
             this.textBoxEmail.Click += new System.EventHandler(this.TextBoxUsername_Click);
@@ -78,6 +77,7 @@ namespace QueApp
             this.textBoxPassword.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(649, 333);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(225, 26);
             this.textBoxPassword.TabIndex = 5;
             this.textBoxPassword.Click += new System.EventHandler(this.TextBoxPassword_Click);
