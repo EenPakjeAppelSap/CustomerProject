@@ -27,7 +27,7 @@ namespace QueApp
             {
                 timerLoad.Stop();
                 FormLogin formLogin = new FormLogin();
-                formLogin.Show();
+                formLogin.ShowDialog();
                 this.Hide();
             }
         }

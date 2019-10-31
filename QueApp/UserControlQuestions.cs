@@ -12,12 +12,12 @@ namespace QueApp
 {
     public partial class UserControlQuestions : UserControl
     {
-        public UserControlQuestions(FormMain formMain)
+        public UserControlQuestions()
         {
             InitializeComponent();
             checkBoxDone.Enabled = false;
-        }   
-       
+        }
+
 
         private void ButtonAnswer_Click(object sender, EventArgs e)
         {
@@ -25,5 +25,21 @@ namespace QueApp
             formAnswer.Show();
 
         }
+
+        public string PartitionKey { get; set; }
+        public string RowKey { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Category1 { get; set; }
+        public string Category2 { get; set; }
+        public string Category3 { get; set; }
+        public string Question1 { get; set; }
+        public string Question2 { get; set; }
+        public string Answer { get; set; }
+        public string AskedBy { get; set; }
+        public string AnsweredBy { get; set; }
+        public DateTime AskedDateTime { get; set; }
+        public DateTime AnsweredDateTime { get; set; }
+        public bool IsActive { get; set; }
     }
 }

@@ -43,7 +43,7 @@ namespace QueApp
                     MessageBox.Show("Login Succeeded! " + user.Name + " " + user.SurName);
                     var formLoading2 = new FormLoading2();
                     this.Close();
-                    formLoading2.Show();                    
+                    formLoading2.ShowDialog();
                 }
                 else
                 {

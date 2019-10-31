@@ -42,5 +42,54 @@ namespace QueApp
 
             var response = (HttpWebResponse)request.GetResponse();
         }
+
+        public static string GetQuestion()
+        {
+            var request = WebRequest.Create("https://queapp.azurewebsites.net/api/GetQuestion?code=HGawB03G71yeeirW4BmeCKoL8C7pf4DqHyXCbGBD8TLdC9SYdTYOMA==");
+            request.ContentType = "application/json";
+            request.Method = "GET";
+            var response = (HttpWebResponse)request.GetResponse();
+
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            return responseString;
+        }
+
+        private void SetQuestionsInPanel()
+        {
+
+            string responseString = GetQuestion();
+            var questions = JsonConvert.DeserializeObject<List<Model.QuestionModel>>(responseString);
+            var imageNr = 0;
+            var rowNr = 0;
+
+
+            foreach (var question in questions)
+            {
+                UserControlQuestions ucQuestion = new UserControlQuestions();
+
+                ucQuestion.PartitionKey = question.PartitionKey;
+                ucQuestion.RowKey = question.RowKey;
+                ucQuestion.Title = question.Title;
+                ucQuestion.Description = question.Description;
+                ucQuestion.Category1 = question.Category1;
+                ucQuestion.Category2 = question.Category2;
+                ucQuestion.Category3 = question.Category3;
+                ucQuestion.Question1 = question.Question1;
+                ucQuestion.Question2 = question.Question2;
+                ucQuestion.Answer = question.Answer;
+                ucQuestion.AskedBy = question.AskedBy;
+                ucQuestion.AnsweredBy = question.AnsweredBy;
+                ucQuestion.AskedDateTime = question.AskedDateTime;
+                ucQuestion.AnsweredDateTime = question.AnsweredDateTime;
+                ucQuestion.Top = 300 * rowNr;
+
+                
+                panelPartijen.Controls.Add(ucQuestion);
+
+                rowNr++;               
+            }
+        }
+
     }
 }
