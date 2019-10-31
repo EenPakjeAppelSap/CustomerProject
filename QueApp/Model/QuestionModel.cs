@@ -8,6 +8,8 @@ namespace QueApp.Model
 {
     public class QuestionModel
     {
+        public string PartitionKey { get; set; }
+        public string RowKey { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Category1 { get; set; }

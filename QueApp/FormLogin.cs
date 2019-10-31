@@ -36,14 +36,14 @@ namespace QueApp
         {
             if (textBoxPassword.Text != string.Empty && textBoxPassword.Text != string.Empty)
             {
-            
-                //var encryptedPassword = Helpers.PasswordHashing.GenerateSHA256String(textBoxPassword.Text.ToString());
-
-                var loginok = Helpers.UserHelper.UserLogin(textBoxEmail.Text.ToString(), textBoxPassword.Text.ToString());
-
-                if (loginok.StartsWith("Login Succeeded!"))
+                var user = Helpers.UserHelper.UserLogin(textBoxEmail.Text.ToString(), textBoxPassword.Text.ToString());
+                if (user.LoginSucceeded == true)
                 {
-                    MessageBox.Show("Login Succeeded!");
+
+                    MessageBox.Show("Login Succeeded! " + user.Name + " " + user.SurName);
+                    var formLoading2 = new FormLoading2();
+                    this.Close();
+                    formLoading2.Show();                    
                 }
                 else
                 {
