@@ -26,16 +26,13 @@ namespace QueApp
 
         private void TimerLoading2_Tick(object sender, EventArgs e)
         {
-            panelSlide.Left += 2;
-
-            if (panelSlide.Left > 250)
+            panelLoad2.Width += 1;
+            if (panelLoad2.Width >= 700)
             {
-                panelSlide.Left = 0;
-            }
-
-            if (panelSlide.Left < 0)
-            {
-                move = 2; 
+                timerLoading2.Stop();
+                FormMain formMain = new FormMain();
+                formMain.Show();
+                this.Hide();
             }
 
         }
