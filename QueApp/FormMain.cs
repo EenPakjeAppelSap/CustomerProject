@@ -33,9 +33,7 @@ namespace QueApp
 
         private void ButtonLogout_Click(object sender, EventArgs e)
         {
-            FormLogin formLogin = new FormLogin();
-            formLogin.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void ButtonAskQuestion_Click(object sender, EventArgs e)
@@ -43,8 +41,6 @@ namespace QueApp
             position(buttonAskQuestion);
             FormAskQuestion formLogin = new FormAskQuestion();
             formLogin.Show();
-
-
         }
 
         private void buttonMyQuestions_Click(object sender, EventArgs e)

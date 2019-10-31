@@ -130,6 +130,7 @@
     </Compile>
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Model\QuestionModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControlAnswerQuestions.cs">

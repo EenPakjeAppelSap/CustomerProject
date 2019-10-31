@@ -24,8 +24,8 @@ namespace QueApp.Helpers
         }
 
 
-        public static string UserLogin(string email, string password)
-        {
+        public static Model.UserModel UserLogin(string email, string password)
+        {            
 
             var request = WebRequest.Create("https://queapp.azurewebsites.net/api/GetStudent?code=2yYOItB3nY9rvYIaMhD20PSKwZDtttzcXdoaihhcuwcC7Sl6i6n8NQ==");
             request.ContentType = "application/json";
@@ -47,8 +47,7 @@ namespace QueApp.Helpers
 
             var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
 
-            return responseString;
-
+            return JsonConvert.DeserializeObject<Model.UserModel>(responseString);
         }
 
         static string sha256(string passwordString)
