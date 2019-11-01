@@ -119,8 +119,6 @@ namespace QueApp
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.Size = new System.Drawing.Size(331, 22);
             this.textBoxTitle.TabIndex = 22;
-            this.textBoxTitle.TextChanged += new System.EventHandler(this.TextBoxTitle_TextChanged);
-            this.textBoxTitle.MouseLeave += new System.EventHandler(this.TextBoxTitle_MouseLeave);
             // 
             // buttonConfirm
             // 
@@ -286,7 +284,6 @@ namespace QueApp
             this.comboBoxPrio.Name = "comboBoxPrio";
             this.comboBoxPrio.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPrio.TabIndex = 7;
-            this.comboBoxPrio.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPrio_SelectedIndexChanged);
             // 
             // comboBoxTeacher
             // 
@@ -302,7 +299,6 @@ namespace QueApp
             this.comboBoxTeacher.Name = "comboBoxTeacher";
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 6;
-            this.comboBoxTeacher.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTeacher_SelectedIndexChanged);
             // 
             // comboBoxSubject
             // 
@@ -316,7 +312,6 @@ namespace QueApp
             this.comboBoxSubject.Name = "comboBoxSubject";
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 5;
-            this.comboBoxSubject.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSubject_SelectedIndexChanged);
             // 
             // labelStep2
             // 
@@ -345,8 +340,6 @@ namespace QueApp
             this.textBoxSubject.Name = "textBoxSubject";
             this.textBoxSubject.Size = new System.Drawing.Size(331, 22);
             this.textBoxSubject.TabIndex = 1;
-            this.textBoxSubject.TextChanged += new System.EventHandler(this.TextBoxSubject_TextChanged);
-            this.textBoxSubject.MouseLeave += new System.EventHandler(this.TextBoxSubject_MouseLeave);
             // 
             // panel1
             // 

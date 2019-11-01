@@ -15,14 +15,6 @@ namespace QueApp
         public FormAskQuestion()
         {
             InitializeComponent();
-            textBoxTitle.Enabled = false;
-            comboBoxSubject.Enabled = false;
-            comboBoxTeacher.Enabled = false;
-            comboBoxPrio.Enabled = false;
-            checkBoxStep3j.Enabled = false;
-            checkBoxStep3n.Enabled = false;
-            checkBoxStep4j.Enabled = false;
-            checkBoxStep4n.Enabled = false;
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -125,92 +117,6 @@ namespace QueApp
                 MessageBox.Show("Weet u zeker dat u deze vraag wilt bevestiggen");
             }
       
-        }
-
-        private void TextBoxSubject_MouseLeave(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(textBoxSubject.Text))
-            {
-                textBoxTitle.Enabled = true;
-            }
-
-            else
-            {
-                textBoxTitle.Enabled = false;
-                MessageBox.Show("Je moet eerst een vak selecteren");
-            }
-        }
-
-        private void TextBoxTitle_MouseLeave(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(textBoxTitle.Text))
-            {
-                comboBoxSubject.Enabled = true;
-            }
-
-            else
-            {
-                comboBoxSubject.Enabled = false;
-            }
-        }
-
-        private void ComboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBoxSubject.SelectedIndex > -1)
-            {
-                comboBoxTeacher.Enabled = true;
-            }
-
-            else
-            {
-                comboBoxTeacher.Enabled = false;
-            }
-        }
-
-        private void ComboBoxTeacher_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBoxTeacher.SelectedIndex > -1)
-            {
-                comboBoxPrio.Enabled = true;
-            }
-
-            else
-            {
-                comboBoxPrio.Enabled = false;
-            }
-        }
-
-        private void ComboBoxPrio_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBoxPrio.SelectedIndex > -1)
-            {
-                checkBoxStep3j.Enabled = true;
-                checkBoxStep3n.Enabled = true;
-            }
-
-            else
-            {
-                checkBoxStep3j.Enabled = false;
-                checkBoxStep3n.Enabled = false;
-            }
-        }
-
-        private void TextBoxSubject_TextChanged(object sender, EventArgs e)
-        {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(textBoxSubject.Text, "^[a-zA-Z ]"))
-            {
-                MessageBox.Show("Het is niet mogelijk om cijfers in te vullen");
-                textBoxSubject.Text = "";
-            }
-        }
-
-        private void TextBoxTitle_TextChanged(object sender, EventArgs e)
-        {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(textBoxTitle.Text, "^[a-zA-Z ]"))
-            {
-                MessageBox.Show("Het is niet mogelijk om cijfers in te vullen");
-                textBoxTitle.Text = "";
-            }
         }
     }
 }
