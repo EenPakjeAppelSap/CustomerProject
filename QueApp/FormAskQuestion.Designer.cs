@@ -119,6 +119,7 @@ namespace QueApp
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.Size = new System.Drawing.Size(331, 22);
             this.textBoxTitle.TabIndex = 22;
+            this.textBoxTitle.TextChanged += new System.EventHandler(this.TextBoxTitle_TextChanged);
             this.textBoxTitle.MouseLeave += new System.EventHandler(this.TextBoxTitle_MouseLeave);
             // 
             // buttonConfirm
@@ -344,6 +345,7 @@ namespace QueApp
             this.textBoxSubject.Name = "textBoxSubject";
             this.textBoxSubject.Size = new System.Drawing.Size(331, 22);
             this.textBoxSubject.TabIndex = 1;
+            this.textBoxSubject.TextChanged += new System.EventHandler(this.TextBoxSubject_TextChanged);
             this.textBoxSubject.MouseLeave += new System.EventHandler(this.TextBoxSubject_MouseLeave);
             // 
             // panel1
