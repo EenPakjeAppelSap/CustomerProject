@@ -15,6 +15,14 @@ namespace QueApp
         public FormAskQuestion()
         {
             InitializeComponent();
+            textBoxTitle.Enabled = false;
+            comboBoxSubject.Enabled = false;
+            comboBoxTeacher.Enabled = false;
+            comboBoxPrio.Enabled = false;
+            checkBoxStep3j.Enabled = false;
+            checkBoxStep3n.Enabled = false;
+            checkBoxStep4j.Enabled = false;
+            checkBoxStep4n.Enabled = false;
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -41,6 +49,7 @@ namespace QueApp
                 textBoxQuestion1.Visible = true;
                 labeltextBox2.Visible = true;
             }
+
         }
 
         private void CheckBoxStep3n_CheckedChanged(object sender, EventArgs e)
@@ -50,18 +59,32 @@ namespace QueApp
                 checkBoxStep3j.Checked = false;
                 MessageBox.Show(" Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
             }
-           
+
         }
 
         private void CheckBoxStep4j_CheckedChanged(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(textBoxQuestion1.Text))
+            {
+                MessageBox.Show("Stap 3 dient nog ingevuld te worden");
+                textBoxQuestion2.Enabled = false;
+                checkBoxStep4j.Checked = false;
+
+            }
+
+            else
+            {
+                textBoxQuestion2.Enabled = true;
+            }
+
+
             if (!checkBoxStep4j.Checked)
             {
                 textBoxQuestion2.Visible = false;
                 labeltextBox3.Visible = false;
             }
 
-            if (checkBoxStep4j.Checked)
+            else if (checkBoxStep4j.Checked)
             {
                 checkBoxStep4n.Checked = false;
                 textBoxQuestion2.Visible = true;
@@ -89,8 +112,86 @@ namespace QueApp
         }
         private void ButtonConfirm_Click(object sender, EventArgs e)
         {
-            var userName = new Model.UserModel();
-            QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", userName.Name + userName.SurName, "", true);
+
+            if (String.IsNullOrEmpty(textBoxQuestion2.Text))
+            {
+                MessageBox.Show("Stap 4 dient nog ingevuld te worden");
+            }
+
+            else
+            {
+                var userName = new Model.UserModel();
+                QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", userName.Name + userName.SurName, "", true);
+                MessageBox.Show("Weet u zeker dat u deze vraag wilt bevestiggen");
+            }
+      
+        }
+
+        private void TextBoxSubject_MouseLeave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBoxSubject.Text))
+            {
+                textBoxTitle.Enabled = true;
+            }
+
+            else
+            {
+                textBoxTitle.Enabled = false;
+            }
+        }
+
+        private void TextBoxTitle_MouseLeave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBoxTitle.Text))
+            {
+                comboBoxSubject.Enabled = true;
+            }
+
+            else
+            {
+                comboBoxSubject.Enabled = false;
+            }
+        }
+
+        private void ComboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxSubject.SelectedIndex > -1)
+            {
+                comboBoxTeacher.Enabled = true;
+            }
+
+            else
+            {
+                comboBoxTeacher.Enabled = false;
+            }
+        }
+
+        private void ComboBoxTeacher_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxTeacher.SelectedIndex > -1)
+            {
+                comboBoxPrio.Enabled = true;
+            }
+
+            else
+            {
+                comboBoxPrio.Enabled = false;
+            }
+        }
+
+        private void ComboBoxPrio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxPrio.SelectedIndex > -1)
+            {
+                checkBoxStep3j.Enabled = true;
+                checkBoxStep3n.Enabled = true;
+            }
+
+            else
+            {
+                checkBoxStep3j.Enabled = false;
+                checkBoxStep3n.Enabled = false;
+            }
         }
     }
 }
