@@ -90,7 +90,9 @@ namespace QueApp
         private void ButtonConfirm_Click(object sender, EventArgs e)
         {
             var userName = new Model.UserModel();
-            QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxSubject.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", userName.Name + userName.SurName, "", true);
+            QuestionHelper.SetQuestion("", "", false, textBoxTitle.Text, textBoxQuestion.Text, comboBoxSubject.SelectedItem.ToString(), comboBoxTeacher.SelectedItem.ToString(), comboBoxPrio.SelectedItem.ToString(), textBoxQuestion1.Text, textBoxQuestion2.Text, "", Helpers.GlobalVariables.GlobalVar, "", true);
+            MessageBox.Show("Vraag gesteld aan:" + comboBoxTeacher.SelectedItem.ToString());            
+            this.Close();
         }
     }
 }

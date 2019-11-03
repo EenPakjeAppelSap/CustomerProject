@@ -33,6 +33,14 @@ namespace QueApp
         {
             this.Close();
         }
+
+        private void ButtonConfirmAnswer_Click(object sender, EventArgs e)
+        {
+            QuestionHelper.SetQuestion(labelRowKey.Text, labelPartitionKey.Text, true, textBoxTitle.Text, textBoxQuestion.Text, labelCategory1.Text, labelCategory2.Text, labelCategory3.Text, textBoxQuestion1.Text, textBoxQuestion2.Text, textBoxAnswer.Text, textBoxAskedBy.Text, Helpers.GlobalVariables.GlobalVar, false);
+            MessageBox.Show("Vraag beantwoord voor:" + textBoxAskedBy.Text);
+            this.Close();
+            FormMain.SetQuestionsInPanel();
+        }
     }
 }
 

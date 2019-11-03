@@ -53,6 +53,33 @@ namespace QueApp
             var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
 
             return responseString;
-        }     
+        }
+
+        public static Model.QuestionModel GetQuestionToBeAnswered(string partitionKey)
+        {
+            var request = WebRequest.Create("https://queapp.azurewebsites.net/api/GetQuestion?code=HGawB03G71yeeirW4BmeCKoL8C7pf4DqHyXCbGBD8TLdC9SYdTYOMA==");
+            request.ContentType = "application/json";
+            request.Method = "POST";
+
+            var getQuestionRequest = new
+            {
+                PartitionKey = partitionKey
+            };
+            var data = JsonConvert.SerializeObject(getQuestionRequest).ToString();
+            using (var writer = new StreamWriter(request.GetRequestStream()))
+            {
+                writer.WriteLine(data);
+            }
+            var response = (HttpWebResponse)request.GetResponse();
+
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            char[] MyChar = { '[', ']'};
+
+            //var shorterResponseString = responseString.TrimEnd(MyChar);
+            var shortenendResponseString = responseString.Trim(MyChar);
+
+            return JsonConvert.DeserializeObject<Model.QuestionModel>(shortenendResponseString);
+        }
     }
 }

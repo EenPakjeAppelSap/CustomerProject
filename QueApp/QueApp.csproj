@@ -91,6 +91,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\GlobalVariables.cs" />
     <Compile Include="Helpers\QuestionHelper.cs" />
     <Compile Include="FormAnswer.cs">
       <SubType>Form</SubType>

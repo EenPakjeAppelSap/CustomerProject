@@ -29,6 +29,7 @@ namespace QueApp
         private void InitializeComponent()
         {
             this.panelBackGround1 = new System.Windows.Forms.Panel();
+            this.buttonRefreshQuestions = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.buttonAskQuestion = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@ namespace QueApp
             this.panelBackGround1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelBackGround1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelBackGround1.Controls.Add(this.buttonRefreshQuestions);
             this.panelBackGround1.Controls.Add(this.panelMenu);
             this.panelBackGround1.Controls.Add(this.buttonAskQuestion);
             this.panelBackGround1.Controls.Add(this.buttonLogout);
@@ -56,6 +58,19 @@ namespace QueApp
             this.panelBackGround1.Name = "panelBackGround1";
             this.panelBackGround1.Size = new System.Drawing.Size(262, 634);
             this.panelBackGround1.TabIndex = 0;
+            // 
+            // buttonRefreshQuestions
+            // 
+            this.buttonRefreshQuestions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefreshQuestions.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRefreshQuestions.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonRefreshQuestions.Location = new System.Drawing.Point(29, 420);
+            this.buttonRefreshQuestions.Name = "buttonRefreshQuestions";
+            this.buttonRefreshQuestions.Size = new System.Drawing.Size(197, 47);
+            this.buttonRefreshQuestions.TabIndex = 6;
+            this.buttonRefreshQuestions.Text = "Ververs vragen";
+            this.buttonRefreshQuestions.UseVisualStyleBackColor = true;
+            this.buttonRefreshQuestions.Click += new System.EventHandler(this.ButtonRefreshQuestions_Click);
             // 
             // panelMenu
             // 
@@ -69,7 +84,7 @@ namespace QueApp
             // 
             this.buttonAskQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAskQuestion.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAskQuestion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAskQuestion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAskQuestion.Location = new System.Drawing.Point(29, 246);
             this.buttonAskQuestion.Name = "buttonAskQuestion";
             this.buttonAskQuestion.Size = new System.Drawing.Size(197, 47);
@@ -83,7 +98,7 @@ namespace QueApp
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonLogout.Location = new System.Drawing.Point(38, 570);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(120, 50);
@@ -104,7 +119,7 @@ namespace QueApp
             // 
             this.buttonMyQuestions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMyQuestions.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMyQuestions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonMyQuestions.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonMyQuestions.Location = new System.Drawing.Point(29, 335);
             this.buttonMyQuestions.Name = "buttonMyQuestions";
             this.buttonMyQuestions.Size = new System.Drawing.Size(197, 47);
@@ -117,7 +132,7 @@ namespace QueApp
             // 
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHome.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonHome.Location = new System.Drawing.Point(29, 168);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(197, 47);
@@ -180,5 +195,6 @@ namespace QueApp
         private System.Windows.Forms.Button buttonAskQuestion;
         private System.Windows.Forms.Panel panelMenu;
         public System.Windows.Forms.FlowLayoutPanel panelQuestions;
+        public System.Windows.Forms.Button buttonRefreshQuestions;
     }
 }

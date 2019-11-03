@@ -15,7 +15,6 @@ namespace QueApp
         public FormLoading2()
         {
             InitializeComponent();
-            var questions = QuestionHelper.GetQuestion();
         }
         private void FormLoading2_Load(object sender, EventArgs e)
         {
@@ -23,11 +22,11 @@ namespace QueApp
         }
         private void TimerLoading2_Tick(object sender, EventArgs e)
         {
-            panelLoad2.Width += 1;
+            panelLoad2.Width += 3;
             if (panelLoad2.Width >= 700)
             {
                 timerLoading2.Stop();
-                FormMain formMain = new FormMain();                
+                FormMain formMain = new FormMain();
                 this.Close();
                 formMain.ShowDialog();
             }

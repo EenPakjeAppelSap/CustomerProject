@@ -41,8 +41,8 @@ namespace QueApp
                 var user = Helpers.UserHelper.UserLogin(textBoxEmail.Text.ToString(), textBoxPassword.Text.ToString());
                 if (user.LoginSucceeded == true)
                 {
-
-                    MessageBox.Show("Login Succeeded! " + user.Name + " " + user.SurName);
+                    Helpers.GlobalVariables.GlobalVar = user.Name + " " + user.SurName;
+                    //MessageBox.Show("Login Succeeded! " + user.Name + " " + user.SurName);
                     var formLoading2 = new FormLoading2();
                     this.Close();
                     formLoading2.Show();                    

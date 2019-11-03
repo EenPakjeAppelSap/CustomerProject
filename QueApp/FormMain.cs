@@ -18,12 +18,12 @@ namespace QueApp
         public FormMain()
         {
             InitializeComponent();
-            SetQuestionsInPanel();
             panelQuestions.AutoScrollMinSize = new Size(0, 1700);
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            SetQuestionsInPanel();
             panelMenu.Height = buttonHome.Height;
             position(buttonHome);
         }
@@ -55,8 +55,9 @@ namespace QueApp
             position(buttonHome);
         }
 
-        private void SetQuestionsInPanel()
+        public void SetQuestionsInPanel()
         {
+            panelQuestions.Controls.Clear();
 
             string responseString = QuestionHelper.GetQuestion();
             var questions = JsonConvert.DeserializeObject<List<Model.QuestionModel>>(responseString);
@@ -64,23 +65,28 @@ namespace QueApp
 
 
             foreach (var question in questions)
-            {
+            {                
                 UserControlQuestions ucQuestion = new UserControlQuestions();
-
-                ucQuestion.PartitionKey = question.PartitionKey;
-                ucQuestion.RowKey = question.RowKey;
-                ucQuestion.Title = question.Title;
-                ucQuestion.Description = question.Description;
-                ucQuestion.Category1 = question.Category1;
-                ucQuestion.Category2 = question.Category2;
-                ucQuestion.Category3 = question.Category3;
-                ucQuestion.Question1 = question.Question1;
-                ucQuestion.Question2 = question.Question2;
-                ucQuestion.Answer = question.Answer;
-                ucQuestion.AskedBy = question.AskedBy;
-                ucQuestion.AnsweredBy = question.AnsweredBy;
-                ucQuestion.AskedDateTime = question.AskedDateTime;
-                ucQuestion.AnsweredDateTime = question.AnsweredDateTime;
+                if (question.IsActive == true)
+                {
+                    ucQuestion.checkBoxDone.Enabled = false;
+                    ucQuestion.checkBoxDone.Checked = false;
+                }
+                else
+                {
+                    ucQuestion.checkBoxDone.Enabled = false;
+                    ucQuestion.checkBoxDone.Checked = true;
+                }                
+                ucQuestion.labelSubject.Text = question.Title;
+                ucQuestion.labelStudent.Text = question.AskedBy;
+                ucQuestion.labelSchoolSubject.Text = question.Category1;
+                ucQuestion.labelTeacher.Text = question.Category2;
+                ucQuestion.labelPriority.Text = question.Category3;
+                ucQuestion.labelAnsweredBy.Text = question.AnsweredBy;
+                ucQuestion.labelPartitionKey.Text = question.PartitionKey;
+                ucQuestion.labelRowKey.Text = question.RowKey;
+                ucQuestion.labelPartitionKey.Visible = false;
+                ucQuestion.labelRowKey.Visible = false;
                 ucQuestion.Top = 300 * rowNr;
 
                 panelQuestions.Controls.Add(ucQuestion);
@@ -89,6 +95,9 @@ namespace QueApp
             }
         }
 
-
+        private void ButtonRefreshQuestions_Click(object sender, EventArgs e)
+        {
+            SetQuestionsInPanel();
+        }
     }
 }
