@@ -58,7 +58,7 @@ namespace QueApp
         {
             if (String.IsNullOrEmpty(textBoxQuestion1.Text))
             {
-                MessageBox.Show("Stap 3 dient nog ingevuld te worden");
+                MessageBox.Show("Stap 1 dient nog ingevuld te worden");
                 textBoxQuestion2.Enabled = false;
                 checkBoxStep4j.Checked = false;
 
