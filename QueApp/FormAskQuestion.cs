@@ -41,6 +41,7 @@ namespace QueApp
                 textBoxQuestion1.Visible = true;
                 labeltextBox2.Visible = true;
             }
+
         }
 
         private void CheckBoxStep3n_CheckedChanged(object sender, EventArgs e)
@@ -50,18 +51,32 @@ namespace QueApp
                 checkBoxStep3j.Checked = false;
                 MessageBox.Show(" Je dient eerst zelf stappen te ondernemen voordat je verder kunt");
             }
-           
+
         }
 
         private void CheckBoxStep4j_CheckedChanged(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(textBoxQuestion1.Text))
+            {
+                MessageBox.Show("Stap 3 dient nog ingevuld te worden");
+                textBoxQuestion2.Enabled = false;
+                checkBoxStep4j.Checked = false;
+
+            }
+
+            else
+            {
+                textBoxQuestion2.Enabled = true;
+            }
+
+
             if (!checkBoxStep4j.Checked)
             {
                 textBoxQuestion2.Visible = false;
                 labeltextBox3.Visible = false;
             }
 
-            if (checkBoxStep4j.Checked)
+            else if (checkBoxStep4j.Checked)
             {
                 checkBoxStep4n.Checked = false;
                 textBoxQuestion2.Visible = true;

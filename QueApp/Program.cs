@@ -16,7 +16,7 @@ namespace QueApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLoading());
+            Application.Run(new FormMain ());
         }
     }
 }
